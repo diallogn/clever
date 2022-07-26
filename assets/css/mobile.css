@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+    .slogan h1 {
+        font-size: 1.3rem!important;
+    }
+    .slogan p {
+        font-size: 14px!important;
+    }
+    .slogan a {
+        font-size: 14px!important;
+    }
+    .carousel .img {
+        height: 70vh!important;
+    }
+    section {
+        padding: 7vh 0;
+    }
+    section h3 {
+        padding-bottom: 1.2rem;
+    }
+    .client{
+        height: 25rem!important;
+    }
+    .circle {
+        height: 7rem;
+        width: 7rem;
+    }
+    .circle i {
+        font-size: 3rem!important;
+    }
+    form {
+        padding: 0 2rem;
+    }
+}

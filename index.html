@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clever Multi-services</title>
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/mobile.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap/icons/bootstrap-icons.css"
+      rel="icons"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon.png"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #fff; box-shadow: 0 0 0.25rem 0 #bbb"
+    >
+      <div class="container">
+        <a href="" class="navbar-brand">
+          <img src="assets/images/logo.png" height="60px" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="boxx me-auto mb-2 mb-lg-0"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">A propos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Produits
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">T-shirts</a></li>
+                <li><a class="dropdown-item" href="#">Casquettes</a></li>
+                <li><a class="dropdown-item" href="#">Chaussures</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#bookNow" class="nav-link">Commandez</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="true"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div
+            class="img w-100 d-flex align-items-center justify-content-center"
+            style="
+              color: #fff;
+              height: 87vh;
+              background-image: linear-gradient(
+                  rgba(0, 4, 41, 0.8) 0%,
+                  rgba(0, 4, 41, 0.95) 50%
+                ),
+                url('assets/images/hero.jpg');
+              background-size: cover;
+              background-position: center;
+            "
+          >
+            <div class="slogan text-center">
+              <h1>
+                Clever, <br />
+                le choix des vrais gens.
+              </h1>
+              <p class="pb-3">Disponible partout en Europe.</p>
+              <a class="btn btn-danger" href="#bookNow">Commandez</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="img w-100 d-flex align-items-center justify-content-center"
+            style="
+              color: #fff;
+              height: 87vh;
+              background: linear-gradient(
+                  rgba(0, 4, 41, 0.8) 0%,
+                  rgba(0, 4, 41, 0.95) 50%
+                ),
+                url('assets/images/hero.jpg');
+              background-size: cover;
+              background-position: center;
+            "
+          >
+            <div class="slogan text-center">
+              <h1 style="font-size: 42px">
+                Clever, <br />
+                le choix des vrais gens.
+              </h1>
+              <p class="pb-3">Disponible partout en Europe.</p>
+              <a class="btn btn-danger" href="#bookNow">Commandez</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="img w-100 d-flex align-items-center justify-content-center"
+            style="
+              color: #fff;
+              height: 87vh;
+              background-image: linear-gradient(
+                  rgba(0, 4, 41, 0.8) 0%,
+                  rgba(0, 4, 41, 0.95) 50%
+                ),
+                url('assets/images/hero.jpg');
+              background-size: cover;
+              background-position: center;
+            "
+          >
+            <div class="slogan text-center">
+              <h1 style="font-size: 42px">
+                Clever, <br />
+                le choix des vrais gens.
+              </h1>
+              <p class="pb-3">Disponible partout en Europe.</p>
+              <a class="btn btn-danger" href="#bookNow">Commandez</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <main>
+      <section class="product">
+        <div class="container" id="about">
+          <h3>Décourez nos T-shirts</h3>
+          <p style="text-align: justify">
+            Clever ne pas seulement la marque de la nouvelle géneration mais
+            c'est aussi une idéologie. Si vous êtes à la récherche d'une vie
+            meilleure et que vous vous bâttez tous les jours pour y arriver
+            alors clever vous donne la force, le courage et l'intélligence de
+            continuer. Régardez ci-dessous les clients qui ont choisi de porter
+            les t-shirts clever. Faîtes comme eux et passer votre commande dès
+            maintenant pour y faire parti.
+          </p>
+          <div class="row">
+            <div class="col-sm-6 py-2 col-md-6 col-lg-3">
+              <div
+                class="client"
+                style="background: url('./assets/images/client1.jpg') no-repeat"
+              ></div>
+            </div>
+            <div class="col-sm-6 py-2 col-md-6 col-lg-3">
+              <div
+                class="client"
+                style="background: url('./assets/images/client2.jpg') no-repeat"
+              ></div>
+            </div>
+            <div class="col-sm-6 py-2 col-md-6 col-lg-3">
+              <div
+                class="client"
+                style="background: url('./assets/images/client3.jpg') no-repeat"
+              ></div>
+            </div>
+            <div class="col-sm-6 py-2 col-md-6 col-lg-3">
+              <div
+                class="client"
+                style="background: url('./assets/images/client4.jpg') no-repeat"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reverse">
+        <div class="container">
+          <h3 class="banner">Pourquoi Choisir Clever ?</h3>
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="thumb">
+                <div
+                  class="circle d-flex justify-content-center align-items-center"
+                >
+                  <i
+                    class="bi-lock"
+                    style="font-size: 5rem; color: #0055ff"
+                  ></i>
+                </div>
+                <p class="text-center">Payment securisé</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="thumb">
+                <div
+                  class="circle d-flex justify-content-center align-items-center"
+                >
+                  <i
+                    class="bi-phone"
+                    style="font-size: 5rem; color: #0055ff"
+                  ></i>
+                </div>
+                <p class="text-center">Commandez avec votre Smartphone</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="thumb">
+                <div
+                  class="circle d-flex justify-content-center align-items-center"
+                >
+                  <i
+                    class="bi-clock"
+                    style="font-size: 5rem; color: #0055ff"
+                  ></i>
+                </div>
+                <p class="text-center">Livraison rapide partout en Europe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container" id="bookNow">
+          <h3>Commandez votre T-shirt</h3>
+
+          <form
+            id="form1"
+            name="form1"
+            class="row g-3"
+            accept-charset="UTF-8"
+            autocomplete="off"
+            enctype="multipart/form-data"
+            method="post"
+            novalidate
+            action="https://slimdiallo.wufoo.com/forms/ziql1ny00qe713/#public"
+          >
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <label class="form-label" id="title1">
+                Prénom
+                <span id="req_1" class="req">*</span>
+              </label>
+
+              <input
+                id="Field1"
+                name="Field1"
+                type="text"
+                class="form-control"
+                value=""
+                size="8"
+                tabindex="0"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <label class="form-label" id="title2" for="Field2">
+                Nom
+                <span id="req_2" class="req">*</span>
+              </label>
+              <input
+                id="Field2"
+                name="Field2"
+                type="text"
+                class="form-control"
+                value=""
+                size="14"
+                tabindex="0"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <label class="form-label" id="title3" for="Field3">
+                Addresse
+                <span id="req_3" class="req">*</span>
+              </label>
+              <input
+                id="Field3"
+                name="Field3"
+                type="text"
+                class="form-control"
+                value=""
+                tabindex="0"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <label class="form-label" id="title3" for="Field3">
+                Addresse ligne 2
+              </label>
+              <input
+                id="Field4"
+                name="Field4"
+                type="text"
+                class="form-control"
+                value=""
+                tabindex="0"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <label class="form-label" id="title5" for="Field5"> Ville </label>
+              <input
+                id="Field5"
+                name="Field5"
+                type="text"
+                class="form-control"
+                value=""
+                maxlength="255"
+                tabindex="0"
+                onkeyup=""
+                placeholder=""
+              />
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <label class="form-label" id="title6" for="Field6"
+                >État / Province / Région
+              </label>
+              <input
+                id="Field6"
+                name="Field6"
+                type="text"
+                class="form-control"
+                value=""
+                maxlength="255"
+                tabindex="0"
+                onkeyup=""
+                placeholder=""
+              />
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <label class="form-label" id="title7" for="Field7">
+                Code Postal
+              </label>
+              <input
+                id="Field7"
+                name="Field7"
+                type="text"
+                class="form-control"
+                value=""
+                tabindex="0"
+                onkeyup=""
+                placeholder=""
+              />
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <label class="form-label" id="title14" for="Field8"> Pays </label>
+              <select
+                id="Field8"
+                name="Field8"
+                class="form-select"
+                tabindex="0"
+                data-wufoo-field="dropdown"
+              >
+                <option value="Afghanistan" selected="selected">
+                  <span class="notranslate">Afghanistan</span>
+                </option>
+                <option value="Albania">
+                  <span class="notranslate">Albania</span>
+                </option>
+                <option value="Algeria">
+                  <span class="notranslate">Algeria</span>
+                </option>
+                <option value="Andorra">
+                  <span class="notranslate">Andorra</span>
+                </option>
+                <option value="Angola">
+                  <span class="notranslate">Angola</span>
+                </option>
+                <option value="Antigua and Barbuda">
+                  <span class="notranslate">Antigua and Barbuda</span>
+                </option>
+                <option value="Argentina">
+                  <span class="notranslate">Argentina</span>
+                </option>
+                <option value="Armenia">
+                  <span class="notranslate">Armenia</span>
+                </option>
+                <option value="Australia">
+                  <span class="notranslate">Australia</span>
+                </option>
+                <option value="Austria">
+                  <span class="notranslate">Austria</span>
+                </option>
+                <option value="Azerbaijan">
+                  <span class="notranslate">Azerbaijan</span>
+                </option>
+                <option value="Bahamas">
+                  <span class="notranslate">Bahamas</span>
+                </option>
+                <option value="Bahrain">
+                  <span class="notranslate">Bahrain</span>
+                </option>
+                <option value="Bangladesh">
+                  <span class="notranslate">Bangladesh</span>
+                </option>
+                <option value="Barbados">
+                  <span class="notranslate">Barbados</span>
+                </option>
+                <option value="Belarus">
+                  <span class="notranslate">Belarus</span>
+                </option>
+                <option value="Belgium">
+                  <span class="notranslate">Belgium</span>
+                </option>
+                <option value="Belize">
+                  <span class="notranslate">Belize</span>
+                </option>
+                <option value="Benin">
+                  <span class="notranslate">Benin</span>
+                </option>
+                <option value="Bhutan">
+                  <span class="notranslate">Bhutan</span>
+                </option>
+                <option value="Bolivia (Plurinational State of)">
+                  <span class="notranslate"
+                    >Bolivia (Plurinational State of)</span
+                  >
+                </option>
+                <option value="Bosnia and Herzegovina">
+                  <span class="notranslate">Bosnia and Herzegovina</span>
+                </option>
+                <option value="Botswana">
+                  <span class="notranslate">Botswana</span>
+                </option>
+                <option value="Brazil">
+                  <span class="notranslate">Brazil</span>
+                </option>
+                <option value="Brunei Darussalam">
+                  <span class="notranslate">Brunei Darussalam</span>
+                </option>
+                <option value="Bulgaria">
+                  <span class="notranslate">Bulgaria</span>
+                </option>
+                <option value="Burkina Faso">
+                  <span class="notranslate">Burkina Faso</span>
+                </option>
+                <option value="Burundi">
+                  <span class="notranslate">Burundi</span>
+                </option>
+                <option value="Cabo Verde">
+                  <span class="notranslate">Cabo Verde</span>
+                </option>
+                <option value="Cambodia">
+                  <span class="notranslate">Cambodia</span>
+                </option>
+                <option value="Cameroon">
+                  <span class="notranslate">Cameroon</span>
+                </option>
+                <option value="Canada">
+                  <span class="notranslate">Canada</span>
+                </option>
+                <option value="Central African Republic">
+                  <span class="notranslate">Central African Republic</span>
+                </option>
+                <option value="Chad">
+                  <span class="notranslate">Chad</span>
+                </option>
+                <option value="Chile">
+                  <span class="notranslate">Chile</span>
+                </option>
+                <option value="China">
+                  <span class="notranslate">China</span>
+                </option>
+                <option value="Colombia">
+                  <span class="notranslate">Colombia</span>
+                </option>
+                <option value="Comoros">
+                  <span class="notranslate">Comoros</span>
+                </option>
+                <option value="Congo">
+                  <span class="notranslate">Congo</span>
+                </option>
+                <option value="Costa Rica">
+                  <span class="notranslate">Costa Rica</span>
+                </option>
+                <option value="C&ocirc;te D&#039;Ivoire">
+                  <span class="notranslate">Côte D'Ivoire</span>
+                </option>
+                <option value="Croatia">
+                  <span class="notranslate">Croatia</span>
+                </option>
+                <option value="Cuba">
+                  <span class="notranslate">Cuba</span>
+                </option>
+                <option value="Cyprus">
+                  <span class="notranslate">Cyprus</span>
+                </option>
+                <option value="Czech Republic (Czechia)">
+                  <span class="notranslate">Czech Republic (Czechia)</span>
+                </option>
+                <option value="Democratic People&#039;s Republic of Korea">
+                  <span class="notranslate"
+                    >Democratic People's Republic of Korea</span
+                  >
+                </option>
+                <option value="Democratic Republic of the Congo">
+                  <span class="notranslate"
+                    >Democratic Republic of the Congo</span
+                  >
+                </option>
+                <option value="Denmark">
+                  <span class="notranslate">Denmark</span>
+                </option>
+                <option value="Djibouti">
+                  <span class="notranslate">Djibouti</span>
+                </option>
+                <option value="Dominica">
+                  <span class="notranslate">Dominica</span>
+                </option>
+                <option value="Dominican Republic">
+                  <span class="notranslate">Dominican Republic</span>
+                </option>
+                <option value="Ecuador">
+                  <span class="notranslate">Ecuador</span>
+                </option>
+                <option value="Egypt">
+                  <span class="notranslate">Egypt</span>
+                </option>
+                <option value="El Salvador">
+                  <span class="notranslate">El Salvador</span>
+                </option>
+                <option value="Equatorial Guinea">
+                  <span class="notranslate">Equatorial Guinea</span>
+                </option>
+                <option value="Eritrea">
+                  <span class="notranslate">Eritrea</span>
+                </option>
+                <option value="Estonia">
+                  <span class="notranslate">Estonia</span>
+                </option>
+                <option value="Ethiopia">
+                  <span class="notranslate">Ethiopia</span>
+                </option>
+                <option value="Fiji">
+                  <span class="notranslate">Fiji</span>
+                </option>
+                <option value="Finland">
+                  <span class="notranslate">Finland</span>
+                </option>
+                <option value="France">
+                  <span class="notranslate">France</span>
+                </option>
+                <option value="Gabon">
+                  <span class="notranslate">Gabon</span>
+                </option>
+                <option value="Gambia">
+                  <span class="notranslate">Gambia</span>
+                </option>
+                <option value="Georgia">
+                  <span class="notranslate">Georgia</span>
+                </option>
+                <option value="Germany">
+                  <span class="notranslate">Germany</span>
+                </option>
+                <option value="Ghana">
+                  <span class="notranslate">Ghana</span>
+                </option>
+                <option value="Greece">
+                  <span class="notranslate">Greece</span>
+                </option>
+                <option value="Grenada">
+                  <span class="notranslate">Grenada</span>
+                </option>
+                <option value="Guatemala">
+                  <span class="notranslate">Guatemala</span>
+                </option>
+                <option value="Guinea">
+                  <span class="notranslate">Guinea</span>
+                </option>
+                <option value="Guinea Bissau">
+                  <span class="notranslate">Guinea Bissau</span>
+                </option>
+                <option value="Guyana">
+                  <span class="notranslate">Guyana</span>
+                </option>
+                <option value="Haiti">
+                  <span class="notranslate">Haiti</span>
+                </option>
+                <option value="Holy See">
+                  <span class="notranslate">Holy See</span>
+                </option>
+                <option value="Honduras">
+                  <span class="notranslate">Honduras</span>
+                </option>
+                <option value="Hungary">
+                  <span class="notranslate">Hungary</span>
+                </option>
+                <option value="Iceland">
+                  <span class="notranslate">Iceland</span>
+                </option>
+                <option value="India">
+                  <span class="notranslate">India</span>
+                </option>
+                <option value="Indonesia">
+                  <span class="notranslate">Indonesia</span>
+                </option>
+                <option value="Iran (Islamic Republic of)">
+                  <span class="notranslate">Iran (Islamic Republic of)</span>
+                </option>
+                <option value="Iraq">
+                  <span class="notranslate">Iraq</span>
+                </option>
+                <option value="Ireland">
+                  <span class="notranslate">Ireland</span>
+                </option>
+                <option value="Israel">
+                  <span class="notranslate">Israel</span>
+                </option>
+                <option value="Italy">
+                  <span class="notranslate">Italy</span>
+                </option>
+                <option value="Jamaica">
+                  <span class="notranslate">Jamaica</span>
+                </option>
+                <option value="Japan">
+                  <span class="notranslate">Japan</span>
+                </option>
+                <option value="Jordan">
+                  <span class="notranslate">Jordan</span>
+                </option>
+                <option value="Kazakhstan">
+                  <span class="notranslate">Kazakhstan</span>
+                </option>
+                <option value="Kenya">
+                  <span class="notranslate">Kenya</span>
+                </option>
+                <option value="Kiribati">
+                  <span class="notranslate">Kiribati</span>
+                </option>
+                <option value="Kuwait">
+                  <span class="notranslate">Kuwait</span>
+                </option>
+                <option value="Kyrgyzstan">
+                  <span class="notranslate">Kyrgyzstan</span>
+                </option>
+                <option value="Lao People&#039;s Democratic Republic">
+                  <span class="notranslate"
+                    >Lao People's Democratic Republic</span
+                  >
+                </option>
+                <option value="Latvia">
+                  <span class="notranslate">Latvia</span>
+                </option>
+                <option value="Lebanon">
+                  <span class="notranslate">Lebanon</span>
+                </option>
+                <option value="Lesotho">
+                  <span class="notranslate">Lesotho</span>
+                </option>
+                <option value="Liberia">
+                  <span class="notranslate">Liberia</span>
+                </option>
+                <option value="Libya">
+                  <span class="notranslate">Libya</span>
+                </option>
+                <option value="Liechtenstein">
+                  <span class="notranslate">Liechtenstein</span>
+                </option>
+                <option value="Lithuania">
+                  <span class="notranslate">Lithuania</span>
+                </option>
+                <option value="Luxembourg">
+                  <span class="notranslate">Luxembourg</span>
+                </option>
+                <option value="Madagascar">
+                  <span class="notranslate">Madagascar</span>
+                </option>
+                <option value="Malawi">
+                  <span class="notranslate">Malawi</span>
+                </option>
+                <option value="Malaysia">
+                  <span class="notranslate">Malaysia</span>
+                </option>
+                <option value="Maldives">
+                  <span class="notranslate">Maldives</span>
+                </option>
+                <option value="Mali">
+                  <span class="notranslate">Mali</span>
+                </option>
+                <option value="Malta">
+                  <span class="notranslate">Malta</span>
+                </option>
+                <option value="Marshall Islands">
+                  <span class="notranslate">Marshall Islands</span>
+                </option>
+                <option value="Mauritania">
+                  <span class="notranslate">Mauritania</span>
+                </option>
+                <option value="Mauritius">
+                  <span class="notranslate">Mauritius</span>
+                </option>
+                <option value="Mexico">
+                  <span class="notranslate">Mexico</span>
+                </option>
+                <option value="Micronesia (Federated States of)">
+                  <span class="notranslate"
+                    >Micronesia (Federated States of)</span
+                  >
+                </option>
+                <option value="Monaco">
+                  <span class="notranslate">Monaco</span>
+                </option>
+                <option value="Mongolia">
+                  <span class="notranslate">Mongolia</span>
+                </option>
+                <option value="Montenegro">
+                  <span class="notranslate">Montenegro</span>
+                </option>
+                <option value="Morocco">
+                  <span class="notranslate">Morocco</span>
+                </option>
+                <option value="Mozambique">
+                  <span class="notranslate">Mozambique</span>
+                </option>
+                <option value="Myanmar">
+                  <span class="notranslate">Myanmar</span>
+                </option>
+                <option value="Namibia">
+                  <span class="notranslate">Namibia</span>
+                </option>
+                <option value="Nauru">
+                  <span class="notranslate">Nauru</span>
+                </option>
+                <option value="Nepal">
+                  <span class="notranslate">Nepal</span>
+                </option>
+                <option value="Netherlands">
+                  <span class="notranslate">Netherlands</span>
+                </option>
+                <option value="New Zealand">
+                  <span class="notranslate">New Zealand</span>
+                </option>
+                <option value="Nicaragua">
+                  <span class="notranslate">Nicaragua</span>
+                </option>
+                <option value="Niger">
+                  <span class="notranslate">Niger</span>
+                </option>
+                <option value="Nigeria">
+                  <span class="notranslate">Nigeria</span>
+                </option>
+                <option value="Norway">
+                  <span class="notranslate">Norway</span>
+                </option>
+                <option value="Oman">
+                  <span class="notranslate">Oman</span>
+                </option>
+                <option value="Pakistan">
+                  <span class="notranslate">Pakistan</span>
+                </option>
+                <option value="Palau">
+                  <span class="notranslate">Palau</span>
+                </option>
+                <option value="Panama">
+                  <span class="notranslate">Panama</span>
+                </option>
+                <option value="Papua New Guinea">
+                  <span class="notranslate">Papua New Guinea</span>
+                </option>
+                <option value="Paraguay">
+                  <span class="notranslate">Paraguay</span>
+                </option>
+                <option value="Peru">
+                  <span class="notranslate">Peru</span>
+                </option>
+                <option value="Philippines">
+                  <span class="notranslate">Philippines</span>
+                </option>
+                <option value="Poland">
+                  <span class="notranslate">Poland</span>
+                </option>
+                <option value="Portugal">
+                  <span class="notranslate">Portugal</span>
+                </option>
+                <option value="Qatar">
+                  <span class="notranslate">Qatar</span>
+                </option>
+                <option value="Republic of Korea">
+                  <span class="notranslate">Republic of Korea</span>
+                </option>
+                <option value="Republic of Moldova">
+                  <span class="notranslate">Republic of Moldova</span>
+                </option>
+                <option value="Romania">
+                  <span class="notranslate">Romania</span>
+                </option>
+                <option value="Russian Federation">
+                  <span class="notranslate">Russian Federation</span>
+                </option>
+                <option value="Rwanda">
+                  <span class="notranslate">Rwanda</span>
+                </option>
+                <option value="Saint Kitts and Nevis">
+                  <span class="notranslate">Saint Kitts and Nevis</span>
+                </option>
+                <option value="Saint Lucia">
+                  <span class="notranslate">Saint Lucia</span>
+                </option>
+                <option value="Saint Vincent and the Grenadines">
+                  <span class="notranslate"
+                    >Saint Vincent and the Grenadines</span
+                  >
+                </option>
+                <option value="Samoa">
+                  <span class="notranslate">Samoa</span>
+                </option>
+                <option value="San Marino">
+                  <span class="notranslate">San Marino</span>
+                </option>
+                <option value="Sao Tome and Principe">
+                  <span class="notranslate">Sao Tome and Principe</span>
+                </option>
+                <option value="Saudi Arabia">
+                  <span class="notranslate">Saudi Arabia</span>
+                </option>
+                <option value="Senegal">
+                  <span class="notranslate">Senegal</span>
+                </option>
+                <option value="Serbia">
+                  <span class="notranslate">Serbia</span>
+                </option>
+                <option value="Seychelles">
+                  <span class="notranslate">Seychelles</span>
+                </option>
+                <option value="Sierra Leone">
+                  <span class="notranslate">Sierra Leone</span>
+                </option>
+                <option value="Singapore">
+                  <span class="notranslate">Singapore</span>
+                </option>
+                <option value="Slovakia">
+                  <span class="notranslate">Slovakia</span>
+                </option>
+                <option value="Slovenia">
+                  <span class="notranslate">Slovenia</span>
+                </option>
+                <option value="Solomon Islands">
+                  <span class="notranslate">Solomon Islands</span>
+                </option>
+                <option value="Somalia">
+                  <span class="notranslate">Somalia</span>
+                </option>
+                <option value="South Africa">
+                  <span class="notranslate">South Africa</span>
+                </option>
+                <option value="South &lrm;Sudan">
+                  <span class="notranslate">South ‎Sudan</span>
+                </option>
+                <option value="Spain">
+                  <span class="notranslate">Spain</span>
+                </option>
+                <option value="Sri Lanka">
+                  <span class="notranslate">Sri Lanka</span>
+                </option>
+                <option value="State of Palestine">
+                  <span class="notranslate">State of Palestine</span>
+                </option>
+                <option value="Sudan">
+                  <span class="notranslate">Sudan</span>
+                </option>
+                <option value="Suriname">
+                  <span class="notranslate">Suriname</span>
+                </option>
+                <option value="Swaziland">
+                  <span class="notranslate">Swaziland</span>
+                </option>
+                <option value="Sweden">
+                  <span class="notranslate">Sweden</span>
+                </option>
+                <option value="Switzerland">
+                  <span class="notranslate">Switzerland</span>
+                </option>
+                <option value="Syrian Arab Republic">
+                  <span class="notranslate">Syrian Arab Republic</span>
+                </option>
+                <option value="Tajikistan">
+                  <span class="notranslate">Tajikistan</span>
+                </option>
+                <option value="Thailand">
+                  <span class="notranslate">Thailand</span>
+                </option>
+                <option value="Republic of North Macedonia">
+                  <span class="notranslate">Republic of North Macedonia</span>
+                </option>
+                <option value="Timor-Leste">
+                  <span class="notranslate">Timor-Leste</span>
+                </option>
+                <option value="Togo">
+                  <span class="notranslate">Togo</span>
+                </option>
+                <option value="Tonga">
+                  <span class="notranslate">Tonga</span>
+                </option>
+                <option value="Trinidad and Tobago">
+                  <span class="notranslate">Trinidad and Tobago</span>
+                </option>
+                <option value="Tunisia">
+                  <span class="notranslate">Tunisia</span>
+                </option>
+                <option value="Turkey">
+                  <span class="notranslate">Turkey</span>
+                </option>
+                <option value="Turkmenistan">
+                  <span class="notranslate">Turkmenistan</span>
+                </option>
+                <option value="Tuvalu">
+                  <span class="notranslate">Tuvalu</span>
+                </option>
+                <option value="Uganda">
+                  <span class="notranslate">Uganda</span>
+                </option>
+                <option value="Ukraine">
+                  <span class="notranslate">Ukraine</span>
+                </option>
+                <option value="United Arab Emirates">
+                  <span class="notranslate">United Arab Emirates</span>
+                </option>
+                <option
+                  value="United Kingdom of Great Britain and Northern Ireland"
+                >
+                  <span class="notranslate"
+                    >United Kingdom of Great Britain and Northern Ireland</span
+                  >
+                </option>
+                <option value="United Republic of Tanzania">
+                  <span class="notranslate">United Republic of Tanzania</span>
+                </option>
+                <option value="United States of America">
+                  <span class="notranslate">United States of America</span>
+                </option>
+                <option value="Uruguay">
+                  <span class="notranslate">Uruguay</span>
+                </option>
+                <option value="Uzbekistan">
+                  <span class="notranslate">Uzbekistan</span>
+                </option>
+                <option value="Vanuatu">
+                  <span class="notranslate">Vanuatu</span>
+                </option>
+                <option value="Venezuela (Bolivarian Republic of)">
+                  <span class="notranslate"
+                    >Venezuela (Bolivarian Republic of)</span
+                  >
+                </option>
+                <option value="Vietnam">
+                  <span class="notranslate">Vietnam</span>
+                </option>
+                <option value="Yemen">
+                  <span class="notranslate">Yemen</span>
+                </option>
+                <option value="Zambia">
+                  <span class="notranslate">Zambia</span>
+                </option>
+                <option value="Zimbabwe">
+                  <span class="notranslate">Zimbabwe</span>
+                </option>
+              </select>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <label class="form-label" id="title9" for="Field9">
+                Email
+                <span id="req_15" class="req">*</span>
+              </label>
+              <input
+                id="Field9"
+                name="Field9"
+                type="email"
+                spellcheck="false"
+                class="form-control"
+                value=""
+                maxlength="255"
+                tabindex="0"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6"></div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <label class="form-label" id="title10" for="Field10">
+                Numéro de Téléphone
+                <span id="req_18" class="req">*</span>
+              </label>
+              <input
+                id="Field10"
+                class="form-control"
+                name="Field10"
+                tabindex="0"
+                required
+                placeholder=""
+                type="tel"
+                maxlength="255"
+                value=""
+              />
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6"></div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+              <label class="form-label" id="title11" for="Field11">
+                Couleur
+              </label>
+              <select
+                id="Field11"
+                name="Field11"
+                class="form-select"
+                tabindex="0"
+                data-wufoo-field="dropdown"
+              >
+                <option value="Choisr..." selected="selected">
+                  <span class="notranslate">Choisir...</span>
+                </option>
+                <option value="Blanche">
+                  <span class="notranslate">Blanche</span>
+                </option>
+                <option value="Bleu">
+                  <span class="notranslate">Bleu</span>
+                </option>
+                <option value="Jaune">
+                  <span class="notranslate">Jaune</span>
+                </option>
+                <option value="Verte">
+                  <span class="notranslate">Verte</span>
+                </option>
+              </select>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+              <legend id="title12" class="col-form-label">Taille</legend>
+
+              <div class="d-flex">
+                <div class="visually-hidden">
+                  <div class="form-check">
+                    <input
+                      id="radioDefault_12"
+                      name="Field12"
+                      type="hidden"
+                      value=""
+                      checked="checked"
+                    />
+                  </div>
+                </div>
+                <div class="mx-2">
+                  <div class="form-check">
+                    <input
+                      id="Field12_0"
+                      name="Field12"
+                      type="radio"
+                      class="form-check-input mr-2"
+                      value="L"
+                      tabindex="0"
+                      onchange=""
+                      required
+                    />
+                    <label class="form-check-label" for="Field12_0">
+                      <span class="choice__text notranslate">L</span>
+                      <span class="choice__qty"> </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="mx-2">
+                  <div class="form-check">
+                    <input
+                      id="Field12_1"
+                      name="Field12"
+                      type="radio"
+                      class="form-check-input"
+                      value="M"
+                      tabindex="0"
+                      onchange=""
+                      required
+                    />
+                    <label class="form-check-label" for="Field12_1">
+                      <span class="choice__text notranslate">M</span>
+                      <span class="choice__qty"> </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="mx-2">
+                  <div class="form-check">
+                    <input
+                      id="Field12_2"
+                      name="Field12"
+                      type="radio"
+                      class="form-check-input"
+                      value="XL"
+                      tabindex="0"
+                      onchange=""
+                      required
+                    />
+                    <label class="form-check-label" for="Field12_2">
+                      <span class="choice__text notranslate">XL</span>
+                      <span class="choice__qty"> </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="mx-2">
+                  <div class="form-check">
+                    <input
+                      id="Field12_3"
+                      name="Field12"
+                      type="radio"
+                      class="form-check-input"
+                      value="XXL"
+                      tabindex="0"
+                      onchange=""
+                      required
+                    />
+                    <label class="form-check-label" for="Field12_3">
+                      <span class="choice__text notranslate">XXL</span>
+                      <span class="choice__qty"> </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <strong>Prix : 45 $</strong>
+            <div class="col-12">
+              <input
+                id="saveForm"
+                name="saveForm"
+                class="btn btn-primary"
+                type="submit"
+                value="Continuer vers le paiement"
+              />
+            </div>
+            <div class="visually-hidden">
+              <label for="comment">Do Not Fill This Out</label>
+              <textarea
+                name="comment"
+                id="comment"
+                rows="1"
+                cols="1"
+              ></textarea>
+              <input
+                type="hidden"
+                id="idstamp"
+                name="idstamp"
+                value="8ANM38k7KGDTR83OxjmM7GAxa5ImkcouAyXmFTBhXYM="
+              />
+              <input
+                type="hidden"
+                id="encryptedPassword"
+                name="encryptedPassword"
+                value=""
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-7 col-lg-4 my-2 my-lg-0">
+              <h6>Conctez nous</h6>
+              <div>
+                <div class="pb-2">
+                  <i style="color: #05f" class="bi bi-geo-alt-fill"></i>
+                  <span>1234 rue de la paix, Paris, France.</span>
+                </div>
+                <div class="">
+                  <i style="color: #05f" class="bi bi-envelope-fill"></i>
+                  contact@clever.com
+                </div>
+                <div class="">
+                  <i style="color: #05f" class="bi bi-whatsapp"></i>
+                  <span>+33 7555 555 555</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-lg-3 my-2 my-lg-0">
+              <h6>Produits</h6>
+              <ul class="list-group" style="list-style: none">
+                <li class="list-item">
+                  <a href="#" class="nav-link">T-shirt</a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="nav-link">Casquette</a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="nav-link">Chaussures</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-2 col-lg-3 my-2 my-lg-0">
+              <h6>Support</h6>
+              <ul class="list-group" style="list-style: none">
+                <li class="list-item">
+                  <a href="#" class="nav-link">FAQ</a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="nav-link">Terms of services</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom py-1">
+        <div
+          class="container text-center text-md-start d-md-flex text-lg-start d-lg-flex align-items-center"
+        >
+          <div class="copy me-auto">
+            <p class="m-0">
+              Copyright &copy; 2022 Clever Multi-services. Tout droit réservé.
+            </p>
+          </div>
+          <div class="media d-flex justify-content-center">
+            <div class="social mx-2">
+              <a href="#" class="nav-link"
+                ><i class="bi bi-facebook" style="font-size: 1.7rem"></i>
+              </a>
+            </div>
+            <div class="social mx-2">
+              <a href="#" class="nav-link"
+                ><i class="bi bi-twitter" style="font-size: 1.7rem"></i
+              ></a>
+            </div>
+            <div class="social mx-2">
+              <a href="#" class="nav-link"
+                ><i class="bi bi-instagram" style="font-size: 1.7rem"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
