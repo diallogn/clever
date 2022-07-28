@@ -83,9 +83,12 @@
     <main>
       <div class="hero">
         <div class="container py-5">
-          <div class="slogan text-center pt-5 pt-sm-0">
+          <div class="slogan text-sm-center pt-5 pt-sm-0">
             <h1 class="m-0">Clever</h1>
-            <p>Habillez-vous avec la marque de la nouvelle génération.</p>
+            <p>
+              Habillez-vous avec la marque de la nouvelle génération. Disponible
+              partout en Europe.
+            </p>
           </div>
           <a href="#bookNow" class="btn btn-book mx-5 m-sm-0"
             >Acheter Maintenant</a
@@ -96,10 +99,14 @@
         <div class="container" id="about">
           <h3>Découvrez nos T-shirts</h3>
           <p style="text-align: justify">
-            Les t-shirts de la marque de vêtements CLEVER sont originaux. Ils
-            sont proposés en plusieurs couleurs et de différentes tailles.
-            Regardez ci-dessous quelques clients qui ont choisi de porter nos
-            t-shirts. Faîtes comme eux et commander les votres dès maintenant.
+            Les t-shirts de la marque CLEVER sont originaux. Ils sont proposés
+            en plusieurs couleurs et de différentes tailles. Si ces t-shirts ne
+            sont pas les plus confortable que vous ayez jamais porté,
+            renvoyez-les et nous vous rembourserons le double du montant de
+            votre achat. Tous les t-shirts sont garantie à vie. Nous les
+            remplacerons gratuitement en cas d’usure. Regardez ci-dessous
+            quelques clients qui ont choisi de porter nos t-shirts. Faîtes comme
+            eux et commander les votres dès maintenant.
           </p>
           <div class="row">
             <div class="col-sm-6 py-2 col-md-6 col-lg-3">
@@ -114,13 +121,13 @@
                 style="background: url('./assets/images/client2.jpg') no-repeat"
               ></div>
             </div>
-            <div class="col-sm-6 py-2 col-md-6 col-lg-3">
+            <div class="d-none d-sm-block col-sm-6 py-2 col-md-6 col-lg-3">
               <div
                 class="client"
                 style="background: url('./assets/images/client3.jpg') no-repeat"
               ></div>
             </div>
-            <div class="col-sm-6 py-2 col-md-6 col-lg-3">
+            <div class="d-none d-sm-block col-sm-6 py-2 col-md-6 col-lg-3">
               <div
                 class="client"
                 style="background: url('./assets/images/client4.jpg') no-repeat"
@@ -138,10 +145,7 @@
                 <div
                   class="circle d-flex justify-content-center align-items-center"
                 >
-                  <i
-                    class="bi-lock"
-                    style="font-size: 5rem; color: #0055ff"
-                  ></i>
+                  <i class="bi-lock icon"></i>
                 </div>
                 <p class="text-center">Payment securisé</p>
               </div>
@@ -151,10 +155,7 @@
                 <div
                   class="circle d-flex justify-content-center align-items-center"
                 >
-                  <i
-                    class="bi-phone"
-                    style="font-size: 5rem; color: #0055ff"
-                  ></i>
+                  <i class="bi-phone icon"></i>
                 </div>
                 <p class="text-center">Commandez avec votre Smartphone</p>
               </div>
@@ -164,10 +165,7 @@
                 <div
                   class="circle d-flex justify-content-center align-items-center"
                 >
-                  <i
-                    class="bi-clock"
-                    style="font-size: 5rem; color: #0055ff"
-                  ></i>
+                  <i class="bi-clock icon"></i>
                 </div>
                 <p class="text-center">Livraison rapide partout en Europe</p>
               </div>
@@ -1070,12 +1068,28 @@
                 </div>
               </div>
             </div>
-            <strong>Prix : 45 $</strong>
+            <strong>Prix : 100 €</strong>
+            <div class="visually-hidden col-sm-6 col-md-6 col-lg-6">
+              <label class="form-label" id="title10" for="Field10">
+                Prix
+              </label>
+              <input
+                id="Field13"
+                class="form-control"
+                name="Field13"
+                tabindex="0"
+                placeholder=""
+                type="number"
+                maxlength="255"
+                value="100"
+              />
+            </div>
             <div class="col-12">
               <input
                 id="saveForm"
                 name="saveForm"
-                class="btn btn-primary"
+                class="btn"
+                style="background-color: #ea6f16; color: #fff"
                 type="submit"
                 value="Continuer vers le paiement"
               />
@@ -1114,15 +1128,15 @@
               <h6>Conctez nous</h6>
               <div>
                 <div class="pb-2">
-                  <i style="color: #05f" class="bi bi-geo-alt-fill"></i>
+                  <i style="color: #ea6f16" class="bi bi-geo-alt-fill"></i>
                   <span>1234 rue de la paix, Paris, France.</span>
                 </div>
                 <div class="">
-                  <i style="color: #05f" class="bi bi-envelope-fill"></i>
+                  <i style="color: #ea6f16" class="bi bi-envelope-fill"></i>
                   contact@clever.com
                 </div>
                 <div class="">
-                  <i style="color: #05f" class="bi bi-whatsapp"></i>
+                  <i style="color: #ea6f16" class="bi bi-whatsapp"></i>
                   <span>+33 7555 555 555</span>
                 </div>
               </div>
@@ -1141,7 +1155,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-sm-2 col-lg-3 my-2 my-lg-0">
+            <div class="d-none d-sm-block col-sm-2 col-lg-3 my-2 my-lg-0">
               <h6>Support</h6>
               <ul class="list-group" style="list-style: none">
                 <li class="list-item">
@@ -1160,7 +1174,7 @@
           class="container text-center text-md-start d-md-flex text-lg-start d-lg-flex align-items-center"
         >
           <div class="copy me-auto">
-            <p class="m-0">
+            <p class="m-0 d-none d-sm-block">
               Copyright &copy; 2022 Clever Multi-services. Tout droit réservé.
             </p>
           </div>

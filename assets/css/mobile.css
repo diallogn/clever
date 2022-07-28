@@ -1,3 +1,9 @@
+@media screen and (max-width: 540px) {
+    section.reverse {
+        color: #fff;
+        height: 100vh;
+    }
+}
 @media screen and (max-width: 992px) {
     .hero {
         color: #fff;
@@ -25,11 +31,11 @@
         height: 25rem!important;
     }
     .circle {
-        height: 7rem;
-        width: 7rem;
+        height: 10rem;
+        width: 10rem;
     }
     .circle i {
-        font-size: 3rem!important;
+        font-size: 5rem!important;
     }
     form {
         padding: 0 2rem;

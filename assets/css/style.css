@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h5 {
     align-items: center;
     justify-content: center;
 }
-a.btn-book {
+a.btn-book, input.btn-book {
     color: white;
     border: 1px solid #EA6F16;
     background-color: #EA6F16;
@@ -70,7 +70,7 @@ section {
 }
 section.reverse {
     color: #fff;
-    background: #0055FF;
+    background: #EA6F16;
 }
 section.reverse h3 {
     color: #fff;
@@ -86,7 +86,6 @@ form {
 }
 .client{
     height: 16rem!important;
-    width: 100%!important;
     background-size: 100%!important;
     background-position: center!important;
     border-radius: 5px;
@@ -97,7 +96,10 @@ form {
     justify-content: center;
     flex-direction: column;
 }
-
+i.icon {
+    font-size: 5rem!important; 
+    color: #EA6F16!important;
+}
 .circle {
     width: 10rem;
     height: 10rem;
@@ -110,5 +112,5 @@ form {
 }
 .footer-bottom {
     color: #fff;
-    background-color: #0055FF;
+    background-color: #EA6F16;
 }
