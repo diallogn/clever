@@ -28,7 +28,7 @@
   <body>
     <nav
       class="navbar navbar-expand-lg navbar-light"
-      style="background-color: #fff; box-shadow: 0 0 0.25rem 0 #bbb"
+      style="background-color: #fff"
     >
       <div class="container">
         <a href="" class="navbar-brand">
@@ -80,142 +80,26 @@
         </div>
       </div>
     </nav>
-
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-bs-ride="true"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div
-            class="img w-100 d-flex align-items-center justify-content-center"
-            style="
-              color: #fff;
-              height: 87vh;
-              background-image: linear-gradient(
-                  rgba(0, 4, 41, 0.8) 0%,
-                  rgba(0, 4, 41, 0.95) 50%
-                ),
-                url('assets/images/hero.jpg');
-              background-size: cover;
-              background-position: center;
-            "
-          >
-            <div class="slogan text-center">
-              <h1>
-                Clever, <br />
-                le choix des vrais gens.
-              </h1>
-              <p class="pb-3">Disponible partout en Europe.</p>
-              <a class="btn btn-danger" href="#bookNow">Commandez</a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div
-            class="img w-100 d-flex align-items-center justify-content-center"
-            style="
-              color: #fff;
-              height: 87vh;
-              background: linear-gradient(
-                  rgba(0, 4, 41, 0.8) 0%,
-                  rgba(0, 4, 41, 0.95) 50%
-                ),
-                url('assets/images/hero.jpg');
-              background-size: cover;
-              background-position: center;
-            "
-          >
-            <div class="slogan text-center">
-              <h1 style="font-size: 42px">
-                Clever, <br />
-                le choix des vrais gens.
-              </h1>
-              <p class="pb-3">Disponible partout en Europe.</p>
-              <a class="btn btn-danger" href="#bookNow">Commandez</a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div
-            class="img w-100 d-flex align-items-center justify-content-center"
-            style="
-              color: #fff;
-              height: 87vh;
-              background-image: linear-gradient(
-                  rgba(0, 4, 41, 0.8) 0%,
-                  rgba(0, 4, 41, 0.95) 50%
-                ),
-                url('assets/images/hero.jpg');
-              background-size: cover;
-              background-position: center;
-            "
-          >
-            <div class="slogan text-center">
-              <h1 style="font-size: 42px">
-                Clever, <br />
-                le choix des vrais gens.
-              </h1>
-              <p class="pb-3">Disponible partout en Europe.</p>
-              <a class="btn btn-danger" href="#bookNow">Commandez</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
     <main>
+      <div class="hero">
+        <div class="container py-5">
+          <div class="slogan text-center pt-5 pt-sm-0">
+            <h1 class="m-0">Clever</h1>
+            <p>Habillez-vous avec la marque de la nouvelle génération.</p>
+          </div>
+          <a href="#bookNow" class="btn btn-book mx-5 m-sm-0"
+            >Acheter Maintenant</a
+          >
+        </div>
+      </div>
       <section class="product">
         <div class="container" id="about">
-          <h3>Décourez nos T-shirts</h3>
+          <h3>Découvrez nos T-shirts</h3>
           <p style="text-align: justify">
-            Clever ne pas seulement la marque de la nouvelle géneration mais
-            c'est aussi une idéologie. Si vous êtes à la récherche d'une vie
-            meilleure et que vous vous bâttez tous les jours pour y arriver
-            alors clever vous donne la force, le courage et l'intélligence de
-            continuer. Régardez ci-dessous les clients qui ont choisi de porter
-            les t-shirts clever. Faîtes comme eux et passer votre commande dès
-            maintenant pour y faire parti.
+            Les t-shirts de la marque de vêtements CLEVER sont originaux. Ils
+            sont proposés en plusieurs couleurs et de différentes tailles.
+            Regardez ci-dessous quelques clients qui ont choisi de porter nos
+            t-shirts. Faîtes comme eux et commander les votres dès maintenant.
           </p>
           <div class="row">
             <div class="col-sm-6 py-2 col-md-6 col-lg-3">
@@ -612,7 +496,7 @@
                 <option value="Finland">
                   <span class="notranslate">Finland</span>
                 </option>
-                <option value="France">
+                <option value="France" selected>
                   <span class="notranslate">France</span>
                 </option>
                 <option value="Gabon">
@@ -1068,6 +952,7 @@
               />
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6"></div>
+            <h4>Votre Commande</h4>
             <div class="col-sm-3 col-md-3 col-lg-3">
               <label class="form-label" id="title11" for="Field11">
                 Couleur
