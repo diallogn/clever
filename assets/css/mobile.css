@@ -1,7 +1,6 @@
 @media screen and (max-width: 540px) {
     section.reverse {
         color: #fff;
-        height: 100vh;
     }
 }
 @media screen and (max-width: 992px) {
